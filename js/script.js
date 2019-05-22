@@ -37,8 +37,8 @@ temperatureDegree.addEventListener('click', () => {
 
 // API Calling
 function APICall(lat, long) {
-    const proxy = `https://cors-anywhere.herokuapp.com/`;
-    const API = `${proxy}https://api.darksky.net/forecast/f36ac08015a2b8528d3c340f562b4d92/${lat},${long}`;
+    // const proxy = `https://cors-anywhere.herokuapp.com/`;
+    const API = `https://api.darksky.net/forecast/f36ac08015a2b8528d3c340f562b4d92/${lat},${long}`;
     fetch(API)
         .then(response => response.json())
         .then(response => {

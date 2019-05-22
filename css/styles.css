@@ -1,6 +1,6 @@
 * {
     margin: 0;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -15,12 +15,22 @@ body {
     color: #fff;
 }
 
+.alert {
+    display: none;
+    text-align: center;
+    width: 50vw;
+}
+
 .location, .temperature {
     height: 30vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+#icon {
+    padding: 20px;
 }
 
 .temperature {
@@ -40,4 +50,9 @@ body {
 
 .degree-section h2 {
     font-size: 40px;
+}
+
+.temperature-description {
+    font-size: 1.5rem;
+    text-align: center;
 }

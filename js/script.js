@@ -51,6 +51,7 @@ function getWeather(lat, long) {
 
             // Setting DOM Elements from API
             temperatureDegree.textContent = Math.round(temperature);
+            unit.textContent = 'F';
             temperatureDescription.textContent = summary;
             locationTimezone.textContent = response.timezone;
 

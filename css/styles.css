@@ -5,6 +5,10 @@
     user-select: none;
 }
 
+html {
+    padding: 10px;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -27,7 +31,7 @@ body {
 }
 
 .form-group label {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .location, .temperature {
@@ -54,7 +58,7 @@ body {
 
 .degree-section span {
     margin: 10px;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 sup {
@@ -63,10 +67,30 @@ sup {
 }
 
 .degree-section h2 {
-    font-size: 40px;
+    font-size: 3em;
 }
 
 .temperature-description {
     font-size: 1.5rem;
     text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .form-group label {
+        font-size: 1.5em;
+    }
+    .form-group {
+        margin: 0 auto;
+    }
+    #location-input {
+        width: 15em;
+        margin: 0 auto;
+    }
+    .location-timezone {
+        font-size: 1.3em;
+    }
+    .submitbtn {
+        margin: 0 auto;
+        margin-top: 43px;
+    }
 }

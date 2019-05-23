@@ -21,6 +21,14 @@ body {
     width: 50vw;
 }
 
+#location-input {
+    width: 20em;
+}
+
+.form-group label {
+    font-size: 30px;
+}
+
 .location, .temperature {
     height: 30vh;
     width: 50%;
@@ -46,6 +54,11 @@ body {
 .degree-section span {
     margin: 10px;
     font-size: 30px;
+}
+
+sup {
+    font-size: 30px;
+    margin-right: -10px;
 }
 
 .degree-section h2 {

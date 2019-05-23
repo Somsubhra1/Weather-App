@@ -1,5 +1,5 @@
 # Weather App
-Weather App using Vanilla JS and DarkSky API.
+Weather App using Vanilla JS, DarkSky API and LocationIQ API.
 
 ## Preview
 Click [here](https://somsubhra1.github.io/Weather-App/) for preview.

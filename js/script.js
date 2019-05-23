@@ -91,5 +91,6 @@ function getCoordinates(event) {
                 alertDiv.style.display = 'none';
                 alertDiv.textContent = 'Please provide give access to location!!';
             }, 2000);
-        });    
+        }); 
+    locationInput.value = "";
 }

@@ -18,8 +18,8 @@ window.addEventListener("load", () => {
             long = position.coords.longitude;
             getWeather(lat, long);
         }, error => {
-                if (error.code === error.PERMISSION_DENIED) { // handling location access error
-                  alertDiv.style.display = 'block';
+            if (error.code === error.PERMISSION_DENIED) { // handling location access error
+                alertDiv.style.display = 'block';
             }
         });
     }
@@ -34,7 +34,6 @@ temperatureDegree.addEventListener('click', () => {
         unit.textContent = 'F';
         temperatureDegree.textContent = Math.round(((temperatureDegree.textContent * 9) / 5) + 32);
     }
-
 });
 
 // eventlistener for form submit
@@ -81,7 +80,7 @@ function getCoordinates(event) {
         .then(response => response.json())
         .then(response => {
             // console.log(response);            
-            const { lat, lon } = response[0];
+            const { lat, lon } = response[0]; // fetching latitude and longitude from the API
             getWeather(lat, lon);
         })
         .catch(error => {
@@ -91,6 +90,5 @@ function getCoordinates(event) {
                 alertDiv.style.display = 'none';
                 alertDiv.textContent = 'Please provide give access to location!!';
             }, 2000);
-        });
-    
+        });    
 }
